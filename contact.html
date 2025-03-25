@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Enhanced styles for a modern, appealing contact page */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f8;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+        }
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        #contact-info, #contact-form, #map {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+        #contact-info h1, #contact-form h2, #map h2 {
+            margin-bottom: 1rem;
+            color: #007BFF;
+        }
+        .contact-details p {
+            margin: 0.5rem 0;
+        }
+        form .form-group {
+            margin-bottom: 1rem;
+        }
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        form .btn {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form .btn:hover {
+            background-color: #0056b3;
+        }
+        #map iframe {
+            border: none;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: #ccc;
+            padding: 2rem;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .footer-section {
+            flex: 1 1 250px;
+            text-align: left;
+        }
+        .footer-section h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+        .footer-section ul li a:hover {
+            color: #fff;
+        }
+        .social-links ul {
+            display: flex;
+            gap: 1rem;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .newsletter-form input[type="email"] {
+            flex: 1;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 3px;
+        }
+        .newsletter-form .btn {
+            padding: 0.55rem 1rem;
+            border-radius: 3px;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1rem;
+            border-top: 1px solid #444;
+            margin-top: 1rem;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-section {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">The Hub</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact-info">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Reach out to us using the form below or through our contact details.</p>
+            <div class="contact-details">
+                <p><strong>Address:</strong> Koinange Street, Nairobi</p>
+                <p><strong>Phone:</strong> <a href="tel:+254728560948">(254) 728-560948</a></p>
+                <p><strong>Email:</strong> <a href="mailto:mnangatariel27@gmail.com">mnangatariel27@gmail.com</a></p>
+                <p><strong>Hours:</strong> Monday-Friday: 9am-5pm | Saturday: 10am-2pm | Sunday: Closed</p>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" action="confirmation.html" method="get">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn" id="sendMsgBtn">Send Message</button>
+            </form>
+        </section>
+
+        <section id="map">
+            <h2>Find Us Here</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.225599627705!2d36.816798!3d-1.292066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10cfd7d00d11%3A0x90c61d3e2335f15a!2sKoinange%20St%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1698051838771!5m2!1sen!2sus" width="100%" height="450" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>The Hub</h3>
+                <p>Innovative solutions for modern businesses.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <ul>
+                        <li><a href="#" class="social-icon">Facebook</a></li>
+                        <li><a href="#" class="social-icon">Twitter</a></li>
+                        <li><a href="#" class="social-icon">LinkedIn</a></li>
+                        <li><a href="#" class="social-icon">Instagram</a></li>
+                        <li><a href="#" class="social-icon">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form id="subscribeForm" action="news.html" method="get" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <button type="submit" class="btn" id="subscribeBtn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy - The Hub</title>
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            background: #f2f2f2;
+            color: #444;
+            padding: 20px;
+        }
+        header, footer {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        header h1, footer p {
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .sub-section {
+            margin-bottom: 30px;
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #764ba2;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+                margin: 20px;
+            }
+            header, footer {
+                padding: 12px 16px;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+        /* Modal Popup Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .modal-content {
+            background: #fff;
+            padding: 30px;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            transform: scale(0.8);
+            transition: transform 0.3s ease;
+        }
+        .modal-overlay.active .modal-content {
+            transform: scale(1);
+        }
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: transparent;
+            border: none;
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Modal Popup -->
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-content">
+            <button id="modalClose" class="modal-close">&times;</button>
+            <h2>Welcome to Our Privacy Policy</h2>
+            <p>We value your privacy and have updated our policy to explain how we handle your data. Please review the details.</p>
+        </div>
+    </div>
+
+    <header>
+        <h1>The Hub</h1>
+    </header>
+
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p>This Privacy Policy describes how The Hub ("we," "us," or "our") collects, uses, and shares your information when you use our website and services.</p>
+
+        <div class="section">
+            <h2>Information We Collect</h2>
+            <p>We may collect various types of information including:</p>
+            <ul>
+                <li><strong>Personal Information:</strong> Such as your name, email address, or contact details provided voluntarily.</li>
+                <li><strong>Usage Information:</strong> Like your IP address, browser type, and device information automatically collected as you interact with our website.</li>
+                <li><strong>Cookies and Tracking Technologies:</strong> We use cookies and similar technologies to track your activity and store certain information.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>How We Use Your Information</h2>
+            <p>We may use your information to:</p>
+            <ul>
+                <li>Provide and maintain our services.</li>
+                <li>Communicate with you and offer customer support.</li>
+                <li>Personalize your experience and enhance our website.</li>
+                <li>Send updates and promotional materials (with your consent).</li>
+                <li>Comply with legal obligations.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Sharing Your Information</h2>
+            <p>We may share your information with:</p>
+            <ul>
+                <li><strong>Service Providers:</strong> Who help in operating our website and services.</li>
+                <li><strong>Business Partners:</strong> For joint initiatives and marketing purposes.</li>
+                <li><strong>Legal Authorities:</strong> When required to protect our rights or comply with legal processes.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Your Choices</h2>
+            <p>You have several choices regarding your data:</p>
+            <ul>
+                <li>Access, update, or delete your personal details by contacting us.</li>
+                <li>Opt-out of receiving promotional emails with provided instructions.</li>
+                <li>Disable cookies in your browser (note that this may impact your user experience).</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Cookie Policy</h2>
+            <div class="sub-section">
+                <p>Cookies are small files stored on your device. We use them to:</p>
+                <ul>
+                    <li>Remember your preferences and enhance your website experience.</li>
+                    <li>Analyze site traffic and usage patterns.</li>
+                    <li>Deliver relevant advertising content.</li>
+                </ul>
+                <p>You can control cookie usage via your browser settings. Learn more by visiting <a href="https://www.aboutcookies.org" target="_blank" rel="noopener">About Cookies</a>.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Your Rights</h2>
+            <div class="sub-section">
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access your personal data.</li>
+                    <li>Request corrections or updates to your data.</li>
+                    <li>Request deletion of your data subject to applicable laws.</li>
+                </ul>
+                <p>To exercise these rights, please contact our support team.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Third-Party Services</h2>
+            <p>Our website may contain links or integrations with third-party services (analytics, social media, etc.). We are not responsible for their data practices. Please review their privacy policies before using these services.</p>
+        </div>
+
+        <div class="section">
+            <h2>Security</h2>
+            <p>We implement reasonable measures to protect your information from unauthorized access, but please note that no method of transmission over the internet is 100% secure.</p>
+        </div>
+
+        <div class="section">
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may modify this Privacy Policy periodically. If significant changes occur, we will notify you by posting an updated version on this page.</p>
+            <p><strong>Effective Date:</strong> January 1, 2023</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or concerns regarding this Privacy Policy, please reach out to us at <a href="https://mail.google.com/mail/u/0/#inbox">                <p><strong>Email:</strong> <a href="https://mail.google.com/mail/u/0/#inbox">mnangatariel27@gmail.com</a></p>
+</a>.</p>
+        </div>
+    </div>
+
+       <!-- Footer -->
+ <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>The Hub</h3>
+                <p>Innovative solutions for modern businesses.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <ul>
+                   <li><a href="#" class="social-icon">Facebook</a></li>
+                    <li><a href="#" class="social-icon">Twitter</a></li>
+                    <li><a href="#" class="social-icon">LinkedIn</a></li>
+                    <li><a href="#" class="social-icon">Instagram</a></li>
+                    <li><a href="#" class="social-icon">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form action="news.html" method="get" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Hub. All Rights Reserved.</p>
+        </div>
+    </footer> 
+
+    <script>
+        // Modal popup functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            var modalOverlay = document.getElementById('modalOverlay');
+            var modalClose = document.getElementById('modalClose');
+            // Display the modal shortly after the page loads
+            setTimeout(function() {
+                modalOverlay.classList.add('active');
+            }, 500);
+
+            modalClose.addEventListener('click', function() {
+                modalOverlay.classList.remove('active');
+            });
+            // Close modal if clicked outside the modal content
+            modalOverlay.addEventListener('click', function(event) {
+                if (event.target === modalOverlay) {
+                    modalOverlay.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

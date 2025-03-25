@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourfontawesomecode.js" crossorigin="anonymous"></script>
+    <style>
+   /* ... (previous CSS styles) ... */
+
+/* Team Slideshow Styles */
+.team-slideshow {
+    position: relative;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.team-slideshow .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.team-slide {
+    flex: 0 0 300px;
+    min-width: 300px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.team-slide img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #f8b500;
+    transition: transform 0.3s ease;
+}
+
+.team-slide img:hover {
+    transform: scale(1.05);
+}
+
+.team-slide h3 {
+    margin-bottom: 10px;
+    color: #2575fc;
+    font-weight: 600;
+}
+
+.team-slide p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.team-slide a {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #f8b500;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+    font-weight: 500;
+}
+
+.team-slide a:hover {
+    background: #e0a500;
+}
+
+/* Navigation Controls */
+.slideshow-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.slideshow-controls button {
+    background: #f8b500;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideshow-controls button:hover {
+    background: #e0a500;
+    transform: scale(1.1);
+}
+
+/* Slide Indicators */
+.slide-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.slide-indicators .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    transition: background 0.3s ease;
+}
+
+.slide-indicators .indicator.active {
+    background: #f8b500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-slideshow {
+        padding: 15px;
+    }
+
+    .team-slide {
+        flex: 0 0 280px;
+        min-width: 280px;
+    }
+
+    .team-slide img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-slideshow {
+        max-width: 100%;
+    }
+
+    .team-slide {
+        flex: 0 0 240px;
+        min-width: 240px;
+    }
+
+    .team-slide img {
+        width: 100px;
+        height: 100px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">The Hub</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-header" style="background: linear-gradient(135deg, #fceabb, #f8b500);">
+            <div class="container">
+                <h1>About Us</h1>
+            </div>
+        </section>
+
+        <section class="about-us section">
+            <div class="container">
+                <h2>Our Story</h2>
+                <p>The Hub was founded with a vision to empower businesses and individuals through innovative tech solutions. We believe in creating impactful digital experiences that drive growth and success.</p>
+
+                <h2>Our Team</h2>
+                <p>Our team comprises passionate developers, designers, and strategists who are dedicated to delivering exceptional results. We thrive on collaboration and creativity, ensuring every project is a success.</p>
+                
+                <!-- Team Slider: Sliding effect showing developers with GitHub generated images -->
+                <div class="team-slideshow">
+                    <div class="slides">
+                        <div class="team-slide">
+                            <a href="https://github.com/Unrealrojo234" target="_blank">
+                                <img src="https://github.com/Unrealrojo234.png" alt="Ryan Otieno">
+                            </a>
+                            <h3>Ryan Otieno</h3>
+                            <p>Project Manager</p>
+                            <a href="https://github.com/Unrealrojo234" target="_blank">GitHub Profile</a>
+                        </div>
+                        <div class="team-slide">
+                            <a href="https://github.com/Arielpoghon" target="_blank">
+                                <img src="https://github.com/Arielpoghon.png" alt="Socrates">
+                            </a>
+                            <h3>Socrates </h3>
+                            <p>UX Designer</p>
+                            <a href="https://github.com/Arielpoghon" target="_blank">GitHub Profile</a>
+                        </div>
+                        <div class="team-slide">
+                            <a href="https://github.com/batsonnoah58" target="_blank">
+                                <img src="https://github.com/batsonnoah58.png" alt="Noah Batson">
+                            </a>
+                            <h3>Noah Batson</h3>
+                            <p>Lead Developer</p>
+                            <a href="https://github.com/batsonnoah58" target="_blank">GitHub Profile</a>
+                        </div>
+                    </div>
+                    <!-- Navigation Controls -->
+                    <div class="slideshow-controls">
+                        <button class="prev-btn">&#10094;</button>
+                        <button class="next-btn">&#10095;</button>
+                    </div>
+                    <!-- Slide Indicators -->
+                    <div class="slide-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                </div>
+
+                <h2>Our Values</h2>
+                <ul>
+                    <li>Innovation: We embrace cutting-edge technologies to create unique solutions.</li>
+                    <li>Quality: We are committed to delivering high-quality products and services.</li>
+                    <li>Collaboration: We believe in working closely with our clients to achieve their goals.</li>
+                    <li>Integrity: We conduct our business with honesty and transparency.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+     <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>The Hub</h3>
+                <p>Innovative solutions for modern businesses.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <ul>
+                   <li><a href="#" class="social-icon">Facebook</a></li>
+                    <li><a href="#" class="social-icon">Twitter</a></li>
+                    <li><a href="#" class="social-icon">LinkedIn</a></li>
+                    <li><a href="#" class="social-icon">Instagram</a></li>
+                    <li><a href="#" class="social-icon">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form action="news.html" method="get" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // Team Slideshow functionality
+        const slidesContainer = document.querySelector('.slides');
+        const slides = document.querySelectorAll('.team-slide');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        const indicators = document.querySelectorAll('.indicator');
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+
+        // Update indicator status
+        function updateIndicators() {
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        // Function to slide to a specific index
+        function slideTo(index) {
+            // Calculate transform offset based on slide width
+            const slideWidth = slides[0].clientWidth;
+            slidesContainer.style.transform = `translateX(-${index * slideWidth}px)`;
+            currentSlide = index;
+            updateIndicators();
+        }
+
+        // Next and previous button functionality
+        function next() {
+            let nextIndex = (currentSlide + 1) % totalSlides;
+            slideTo(nextIndex);
+        }
+        
+        function prev() {
+            let prevIndex = (currentSlide - 1 + totalSlides) % totalSlides;
+            slideTo(prevIndex);
+        }
+        
+        nextBtn.addEventListener('click', next);
+        prevBtn.addEventListener('click', prev);
+
+        // Auto-advance every 5 seconds
+        let autoAdvance = setInterval(next, 5000);
+
+        // Pause auto-advance on mouse enter
+        slidesContainer.addEventListener('mouseenter', () => {
+            clearInterval(autoAdvance);
+        });
+        
+        // Resume auto-advance on mouse leave
+        slidesContainer.addEventListener('mouseleave', () => {
+            autoAdvance = setInterval(next, 5000);
+        });
+    </script>
+</body>
+</html>

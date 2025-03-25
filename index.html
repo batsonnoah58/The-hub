@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hub - Tech Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Pop-up animation styles */
+      .pop-up {
+          opacity: 0;
+          transform: translateY(30px);
+          transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .pop-up.in-view {
+          opacity: 1;
+          transform: translateY(0);
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">The Hub</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="pop-up">
+            <div class="hero-content">
+                <h1>Unlock Your Digital Potential with The Hub</h1>
+                <p>We craft innovative tech solutions that drive growth and transform ideas into reality.</p>
+                <a href="services.html" class="btn hero-btn">Explore Our Services</a>
+            </div>
+        </section>
+
+        <section id="services-preview" class="section pop-up">
+            <div class="container">
+                <h2>Our Core Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Crafting responsive and user-friendly websites with cutting-edge technologies.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>App Development</h3>
+                        <p>Building intuitive mobile applications for iOS and Android platforms.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-lightbulb"></i>
+                       <h3>Tech Consulting</h3>
+                        <p>Providing expert guidance and strategic solutions to optimize your tech infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects-preview" class="section bg-light pop-up">
+            <div class="container">
+                <h2>Our Successful Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <img src="socrates.png" alt="Socrates GameHub">
+                        <h3>Socrates GameHub</h3>
+                        <p>An immersive online gaming platform with all your gaming needs.All at a very Pocket friendly price</p>
+                        <a href="https://socrates-gamehub.netlify.app/" class="btn hero-btn">view</a>
+                    </div>
+                    <div class="project-item">
+                        <img src="study.png" alt="StudyHub">
+                        <h3>StudyHub</h3>
+                        <p>A comprehensive educational platform with all Study materials in one place.Tested and approved by educational experts</p>
+                        <a href="https://study-hub-eta.vercel.app/"class="btn hero-btn">view</a>
+                    </div>
+                    <div class="project-item">
+                        <img src="StudyhubCollege.png" alt="StudyHub College">
+                        <h3>StudyHub College</h3>
+                        <p>Learn from industry experts who are passionate about teaching and gain recognized certifications to boost your career prospect.</p>
+                        <a href="study.html" class="btn hero-btn">view</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mobile-app-countdown" class="section pop-up">
+            <div class="container countdown-container">
+                <h2>Mobile Apps Launching Soon!</h2>
+                <p>Get ready for our innovative mobile applications, launching on May 24th, 2025.</p>
+                <div id="countdown"></div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+ <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>The Hub</h3>
+                <p>Innovative solutions for modern businesses.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <ul>
+                   <li><a href="#" class="social-icon">Facebook</a></li>
+                    <li><a href="#" class="social-icon">Twitter</a></li>
+                    <li><a href="#" class="social-icon">LinkedIn</a></li>
+                    <li><a href="#" class="social-icon">Instagram</a></li>
+                    <li><a href="#" class="social-icon">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form action="news.html" method="get" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Hub. All Rights Reserved.</p>
+        </div>
+    </footer>   
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/yourfontawesomecode.js" crossorigin="anonymous"></script>
+    <script>
+      // IntersectionObserver to add pop-up effect on scroll
+      document.addEventListener("DOMContentLoaded", function() {
+          const popElements = document.querySelectorAll('.pop-up');
+          const observer = new IntersectionObserver((entries, observer) => {
+              entries.forEach(entry => {
+                  if(entry.isIntersecting) {
+                      entry.target.classList.add('in-view');
+                      observer.unobserve(entry.target);
+                  }
+              });
+          }, { threshold: 0.1 });
+          popElements.forEach(el => observer.observe(el));
+      });
+    </script>
+</body>
+</html>
