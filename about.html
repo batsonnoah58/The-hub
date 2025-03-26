@@ -223,7 +223,16 @@
                             <p>Lead Developer</p>
                             <a href="https://github.com/batsonnoah58" target="_blank">GitHub Profile</a>
                         </div>
+                        <div class="team-slide">
+                            <a href="https://github.com/WritersWeb" target="_blank">
+                                <img src="https://github.com/WritersWeb.png" alt="Eng. Gore">
+                            </a>
+                            <h3>Eng. Gore</h3>
+                            <p>Fullstack Web Developer</p>
+                            <a href="https://github.com/WritersWeb" target="_blank">GitHub Profile</a>
+                        </div>
                     </div>
+                    
                     <!-- Navigation Controls -->
                     <div class="slideshow-controls">
                         <button class="prev-btn">&#10094;</button>
@@ -329,8 +338,8 @@
         nextBtn.addEventListener('click', next);
         prevBtn.addEventListener('click', prev);
 
-        // Auto-advance every 5 seconds
-        let autoAdvance = setInterval(next, 5000);
+        // Auto-advance every 3 seconds
+        let autoAdvance = setInterval(next, 3000);
 
         // Pause auto-advance on mouse enter
         slidesContainer.addEventListener('mouseenter', () => {
@@ -339,7 +348,7 @@
         
         // Resume auto-advance on mouse leave
         slidesContainer.addEventListener('mouseleave', () => {
-            autoAdvance = setInterval(next, 5000);
+            autoAdvance = setInterval(next, 3000);
         });
     </script>
 </body>
